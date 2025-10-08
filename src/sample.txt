@@ -1,0 +1,1 @@
+This is sample text, as more lines are read more chars are being read and converted into hex format.
