@@ -34,10 +34,10 @@ pub fn main() !void {
         };
         if (bytes_read == 0) break;
 
-        try stdout.print("{08X}  ", .{offset});
+        try stdout.print("{X}  ", .{offset});
 
         for (buffer[0..bytes_read]) |b| {
-            try stdout.print("{02X} ", .{b});
+            try stdout.print("{X} ", .{b});
         }
 
         if (bytes_read < 16) {
