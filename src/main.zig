@@ -32,6 +32,7 @@ pub fn main() !void {
             try stdout.print("Read error at offset {d}: {s}\n", .{offset, @errorName(err)});
             return;
         };
+
         if (bytes_read == 0) break;
 
         try stdout.print("{X}  ", .{offset});
